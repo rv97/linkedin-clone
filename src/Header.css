@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0; /*This and the above line are for the header bar to stay at the top while scrolling*/
+  display: flex; /*everything goes in a line*/
+  justify-content: space-evenly;
+  border-bottom: 0.1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: white;
+  /* 
+Z Index ( z-index ) is a CSS property that defines the 
+order of overlapping HTML elements. Elements with a higher 
+index will be placed on top of elements with a lower index. 
+Note: Z index only works on positioned elements 
+( position:absolute , position:relative , or position:fixed ). */
+  z-index: 999;
+}
+
+.header_left {
+  display: flex;
+}
+
+.header_left > img {
+  object-fit: contain; /*Keeps the aspect ratio*/
+  height: 40px;
+  margin-right: 5px;
+}
+
+.header_search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 22px;
+  color: gray;
+  background-color: #eef3f8;
+}
+
+.header_search > input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.header_right {
+  display: flex;
+}

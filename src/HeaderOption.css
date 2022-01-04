@@ -1,0 +1,23 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.headerOption:hover {
+  color: black;
+}
+
+.headerOption_title {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.headerOption_icon {
+  object-fit: contain; /*Keeps the aspect ratio*/
+  height: 24px !important; /* The material UI takes precedence over this. !important overrides it*/
+  width: 24px !important;
+}
