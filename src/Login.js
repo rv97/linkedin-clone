@@ -5,7 +5,6 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
   signInWithEmailAndPassword,
-  onAuthStateChanged,
 } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";

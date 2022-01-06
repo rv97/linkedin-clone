@@ -39,7 +39,7 @@ function Feed() {
     getDbData();
     setIsUseEffect(false);
     console.log(posts);
-  }, [isUseEffect]);
+  }, [isUseEffect, posts]);
 
   async function sendPost(e) {
     e.preventDefault();
